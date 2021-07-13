@@ -1,0 +1,27 @@
+Stackholder
+>Siswa
+>Mentor
+>>Kecepatan dan ketepatan kelas
+>Admin
+
+Action
+>Pemilihan kelas
+>Payment Gateway
+>QNA
+>Forum / Grup
+>>Bisa posting
+>>Bisa komentar
+>>Profile
+>>Callender
+
+Database Student
+Database Referal
+
+bikin view / request
+
+task manager diisi tiap senin
+laporan ke fay lewat wa 
+
+PR 2 hari
+lihat breef
+buat spreadsheet berdasar task

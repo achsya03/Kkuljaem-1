@@ -1,0 +1,34 @@
+Pengguna(Siswa,Mentor,Admin)
+Pembayaran
+Kelas
+>>Video
+>>Quest
+Mentor
+Jadwal
+Siswa
+>>Progress
+ 
+- Baru daftar: no sign
+- Data lengkap dan non member: Helm penjaga istana
+- Data lengkap dan member: Crown silver
+<Jadwal>
+Kosakata
+Video
+
+QnA
+Pertanyaan
+Jawaban
+
+Forum
+Topik
+
+Informasi
+Promosi
+<Kelas>
+Why
+Keuntungan
+Testimoni
+
+Pengaturan
+Kata_Dilarang
+

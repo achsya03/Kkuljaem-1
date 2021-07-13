@@ -1,0 +1,184 @@
+Login
+Register
+
+Kelas
+>lihat rincian, mentor
+>lihat progress class individu
+=Mentor
+>Lihat profil mentor
+>Siswa bukan member bisa preview 1 video
+>Bisa like class
+>Ada listening file dan tugas
+>>Tugas bisa video, foto, suara
+>Bisa rekam dan dengan rekaman
+>
+
+QNA
+Link Subscription
+Link Web
+
+Lihat 1 halaman kosakata
+
+Update video
+
+Lihat class populer
+
+Lihat forum pupoler
+
+Lihat list notifikasi <alur di backend ?>
+
+Testimoni
+Profil lokasi
+
+User
+>Siswa
+>Mentor / Admin (beda previlage)
+
+user
+>IOS,Android,Web
+
+Notifikasi pake Firebase
+
+Video hari ini
+Kata hari ini
+Pertanyaan hari ini
+
+% Menu
+Class,forum,qna, 
+
+Video pake youtube
+Image CLoudinary
+Suara ?
+
+====================
+
+QNA bisa ada image
+Bisa lihat komentar member berbayar
+pake database
+
+Member(Pengguna berbayar)
+
+Setiap posting
+
+Buat list kata-kata kasar
+
+=============================
+
+Kelas
+
+Like dan ada lampiran listening file, mini task
+qna
+
+soal
+Multiple choice, suara, gambar
+
+=======================
+
+forum(grup)
+topik berdasar populer
+tapi bisa buat prioritas
+
+trending like
+terbaru waktu
+pilihan agar bisa terlihat di atas
+
+judul postingan, desc, jumlah like, juml komentar
+
+ada filter kata kasar
+
+bisa laporan
+upload foto 1, 2 ukuran 1 mb
+
+========================
+user
+username, email, nomor hp, tgl lahir, alamat, lokasi, jenis kelamin
+Ada tanda untuk pengguna tertentu
+
+Nama
+Stattus Member
+Expiration
+
+List history pembayaran
+
+Status pembayaran sudah atau belum
+
+paket:
+1 bulan
+3 bulan
+1 tahun
+
+metode pembayaran
+>cash dan nyicil
+>Pake fastpay
+
+xendit => bebas
+
+referal dari artis
+===============
+
+privacy and policy
+
+===============
+
+about
+
+===============
+
+keluhan
+saat klik buka email
+
+===============
+
+social mediakkuljiem
+
+===============
+
+Judul
+nama video
+durasi
+
+===============
+
+latihan bisa beberapa pertanyaan
+
+================
+
+shadowing
+simpan teks korea
+dan audio
+
+================
+
+mentornya asisten guru
+
+================
+
+buat halaman history untuk development kedua
+
+================
+
+qna cuma untuk kelas yang tersambung = untuk aisisten guru dan member
+admin bisa full lihat
+
+================
+
+menjawab dengan voice
+
+================
+
+mentor laporkan
+admin hapus qna
+
+================
+
+admin
+topic forum tidak bisa dihapus
+dan komentar bisa dihapus
+
+================
+
+Kriteria
+dari semua video dan video selesai
+
+================
+

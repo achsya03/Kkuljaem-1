@@ -1,0 +1,66 @@
+001 [[Pengguna]]
+===========================================================================================
+Daftar[0] | Validasi[1] | Masuk[2] | Lupa_Katasandi[3] | Update_Profil[4] | Keluar[5] ||Lihat_daftar_Pengguna
+===========================================================================================
+
+1.Masuk aplikasi                                                    [0]
+2.Register pakai                                                    [0] (daftar) params[email|no_hp|kata_sandi|device_id]
+>>email                                                             [0]
+>>no_hp                                                             [0]
+>>kata_sandi (diencode SHA)                                         [0]
+>>device_id                                                         [0]
+<<Isi di back-end>>                                                 [0] values[jenis_akun|token]
+>>jenis_akun [NoSign]                                               [0]
+>>token (generate)                                                  [0]
+3.Masuk tabel Pengguna                                              [0] INPUT
+4.Kirim email validasi                                              [1] (validasi) (kirim email) values[id_pengguna|token]
+<<Get data Pengguna>>                                               [1] 
+>>id_pengguna                                                       [1]
+>>token                                                             [1]
+5.Klik Link email => Update tabel Pengguna                          [1] values[jenis_pengguna]
+<<Update>>                                                          [1] CHECK IF jenis_pengguna == Null : 1 => Update(Siswa)
+>>jenis_pengguna [Siswa]                                            [1]
+6.Login pakai email dan kata_sandi                                  [2] (masuk) params[email|kata_sandi] CHECK IF jenis_pengguna == Null : ERROR
+7.Pengecekan dengan tabel Pengguna                                  [2]
+>>email                                                             [2]
+>>kata_sandi                                                        [2]
+<ERROR> => Muncul "Wrong Username and Password",401                 [2]
+<OK> => Masuk menu utama                                            [2]
+8.Klik Lupa Kata Sandi => Input email                               [3] (lupa_sandi) params[email]
+<<Cek data tabel Pengguna>>                                         [3] 
+>>email == input_email                                              [3] 
+<True>                                                              [3] 
+<<Update tabel Pengguna>>                                           [3] 
+>>token(generate)                                                   [3] 
+9.Kirim email validasi                                              [3] (kirim email) values[id_pengguna|token]
+<<Get data Pengguna>>                                               [3]
+>>id_pengguna                                                       [3]
+>>token                                                             [3]
+10.Update kata_sandi                                                [3] (lupa_sandi) params[email|password]
+>>email                                                             [3]
+>>kata_sandi                                                        [3]
+10.Klik Detail Profile                                              [4]
+11.Update data Pengguna                                             [4] (update_pengguna) params[nama|email|no_hp|jenis_kel|tgl_lahir|url_foto|lokasi]
+>>nama                                                              [4]
+>>email                                                             [4] Pengguna.email != email : 1 => email ==Penggunas.email : 1 => update(), 0 ERROR
+>>no_hp                                                             [4]
+>>jenis_kel                                                         [4]
+>>tgl_lahir                                                         [4]
+>>url_foto                                                          [4]
+>>lokasi(koordinat)                                                 [4]
+------------------
+>>kata_sandi                                                        [4] (lupa_sandi) params[email|password]
+12.Keluar ??
+Task di backend
+
+===========================================================================================
+??????????????????
+Apa bisa login 2 device di waktu sama ?
+??????????????????
+
+002 [[Info_Kkuljaem]] [[Banner]] [[Konten]]
+===========================================================================================
+Banner[0] | Rinc_Banner[1] | Kosakata_harian[2] | Rinc_Kosakata_harian[3] | Video_Harian[4] | Info_Kkuljaem[5]
+===========================================================================================
+
+1.

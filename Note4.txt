@@ -1,0 +1,30 @@
+Autentikasi
+Kelas
+Info_Kkuljaem(Benner)
+Pembayaran
+
+Buat 2 Lapis Kelas
+Lapisan 1 refer ke tabel
+Lapisan 2 refer ke task => Route refer ke task
+
+==============================================
+
+Pengguna
+
+Refferal
+
+Jenis_Langganan
+
+Info_Kkuljaem
+
+Banner
+
+Konten
+
+Info_App
+
+Kelas
+
+respon_konten_kelas
+
+==============================================
