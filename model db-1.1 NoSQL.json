@@ -16,13 +16,14 @@
             "jenis_pengguna":"Null|Siswa|Mentor|Admin",
             "jenis_akun":"NoSign|Helm|CrownSilver",
             "Langganan":{
-                "tgl_pembelian":"",
+                "id_langganan":"",
                 "id_jenis_langganan":"",
                 "id_referal":"",
+                "tgl_pembelian":"",
+                "tgl_akhir_langganan":"",
                 "biaya_pembayaran":"",
-                "prosentase":"",
-                "status_pembelian":"Menunggu|Membayar|Terkonfirmasi",
-                "tgl_akhir_langganan":""
+                "diskon":"",
+                "status_pembelian":"Menunggu|Membayar|Terkonfirmasi"
             },
             "Siswa":[
                 {
@@ -81,6 +82,7 @@
 
     "Info_Kkuljaem":[
         {
+            "id_info_kkuljaem":"",
             "Info":[
                 {
                     "id_info":"",
@@ -112,38 +114,35 @@
         {
             "id_konten":"",
             "jenis_konten":"Kosakata|Video",
-            "Rinc_Konten":[
+            "Video":[
                 {
-                    "Konten_Video":[
+                    "id_konten_video":"",
+                    "judul_video":"",
+                    "url_video":"",
+                    "durasi_video":"",
+                    "Jadwal":[
                         {
-                            "id_konten_video":"",
-                            "url_video":"",
-                            "durasi_video":"",
-                            "Jadwal":[
-                                {
-                                    "tgl_muncul":""
-                                }
-                            ]
-                        }
-                    ],
-                    "Konten_Kosakata":[
-                        {
-                            "id_konten_kosakata":"",
-                            "kosakata":"",
-                            "url_hangeul":"",
-                            "cara_baca":"",
-                            "arti":"",
-                            "penggunaan":"",
-                            "url_pengucapan":"",
-                            "Jadwal":[
-                                {
-                                    "id_jadwal":"",
-                                    "tgl_muncul":""
-                                }
-                            ]
+                            "id_jadwal":"",
+                            "tgl_muncul":""
                         }
                     ]
-                    
+                }
+            ],
+            "Kosakata":[
+                {
+                    "id_konten_kosakata":"",
+                    "kosakata":"",
+                    "url_hangeul":"",
+                    "cara_baca":"",
+                    "arti":"",
+                    "penggunaan":"",
+                    "url_pengucapan":"",
+                    "Jadwal":[
+                        {
+                            "id_jadwal":"",
+                            "tgl_muncul":""
+                        }
+                    ]
                 }
             ]
         }
@@ -162,6 +161,7 @@
         {
             "id_kelas":"",
             "nama":"",
+            "url_banner":"",
             "deskripsi":"",
             "total_video":"",
             "total_jam":"",
@@ -169,14 +169,25 @@
             "Mentor":[
                 {
                     "id_mentor":"",
-                    "id_pengguna":"",
-                    "nama_mentor":""
+                    "id_pengguna":""
                 }
             ],
-            "Konten_Video":[
+            "Video":[
                 {
+                    "id_video":"",
                     "id_konten_video":"",
-                    "durasi_video":"",
+                    "Kosakata":[
+                        {
+                            "id_kosakata":"",
+                            "id_konten_kosakata":""
+                        }
+                    ],
+                    "Latihan":[
+                        {
+                            "id_latihan":"",
+                            "id_kuis":""
+                        }
+                    ],
                     "Respon_Suka":[
                         {
                             "id_respon_suka":"",
@@ -186,34 +197,46 @@
                     ]
                 }
             ],
-            "Konten_Kosakata":[
+            "Quiz":[
                 {
-                    "id_konten_kosakata":""
+                    "id_Quiz":"",
+                    "id_kuis":"",
+                    "jml_pertanyaan":"",
+                    "Jawaban_Siswa":[
+                        {
+                            "id_jawaban_siswa":"",
+                            "id_pengguna":"",
+                            "jawaban":""
+                        }
+                    ]
                 }
             ],
-            "Kuis":{
-                "id_kuis":"",
-                "topik":"",
-                "jenis_pertanyaan":"",
-                "pertanyaan":"",
-                "jawaban":"",
-                "Pilihan":[
-                    {
-                        "jenis_pilihan":"Teks|Suara|Gambar",
-                        "pilihan":"Url|Teks"
-                    }
-                ]
-            },
             "Testimoni":[
                 {
                     "id_testimoni":"",
                     "id_pengguna":"",
                     "tgl_testimoni":"",
-                    "deskripsi":""
+                    "testimoni":""
                 }
             ]
         }
     ],
+
+    
+    "Kuis":{
+        "id_kuis":"",
+        "topik":"",
+        "jenis_pertanyaan":"Teks|Suara|Gambar",
+        "pertanyaan":"Url|Teks",
+        "jawaban":"",
+        "Pilihan":[
+            {
+                "id_pilihan":"",
+                "jenis_pilihan":"Teks|Suara|Gambar",
+                "pilihan":"Url|Teks"
+            }
+        ]
+    },
 
     "respon_konten_kelas":[
         {
