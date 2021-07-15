@@ -11,6 +11,7 @@
             "url_foto":"",
             "lokasi":"",
             "device_id":"",
+            "pekerjaan":"",
             "token":"",
             "jenis_pengguna":"Null|Siswa|Mentor|Admin",
             "jenis_akun":"NoSign|Helm|CrownSilver",
@@ -25,12 +26,14 @@
             },
             "Siswa":[
                 {
+                    "id_siswa":"",
                     "id_kelas":"",
                     "prosentase":""
                 }
             ],
             "Catatan":[
                 {
+                    "id_catatan":"",
                     "isi_catatan":"",
                     "tgl_pembuatan":"",
                     "tgl_pelaksanaan":""
@@ -59,6 +62,7 @@
             "jangka_waktu":"",
             "Promosi":[
                 {
+                    "id_promosi":"",
                     "nama_promosi":"",
                     "tgL_awal":"",
                     "tgl_akhir":"",
@@ -67,6 +71,7 @@
             ],
             "Media":[
                 {
+                    "id_media":"",
                     "url_gambar":"",
                     "status_penggunaan":"Aktif|Tidak"
                 }
@@ -78,21 +83,16 @@
         {
             "Info":[
                 {
-                    "kata_kunci":"KataMutiara|Tentang|Alasan|Keuntungan",
+                    "id_info":"",
+                    "kata_kunci":"Nama|Alamat|Pendiri|KataMutiara|Tentang|Alasan|Keuntungan",
                     "isian":""
                 }
             ],
             "Sosial_Media":[
                 {
-                    "nama_media":"Facebook|Instagram|Twitter|Email",
+                    "id_sosial_media":"",
+                    "nama_media":"Facebook|Instagram|Twitter|Email|Tiktok",
                     "isian":""
-                }
-            ],
-            "Testimoni":[
-                {
-                    "id_pengguna":"",
-                    "tgl_testimoni":"",
-                    "deskripsi":""
                 }
             ]
         }
@@ -100,10 +100,11 @@
     
     "Banner":[
         {
+            "id_banner":"",
             "judul_banner":"",
             "url_gambar":"",
             "deskripsi":"",
-            "jenis":"Kelas|Qna|Subsciption|Website"
+            "jenis":"Url|Kelas|Qna|Forum"
         }
     ],
 
@@ -125,10 +126,10 @@
                             ]
                         }
                     ],
-                    "Konten_kosakata":[
+                    "Konten_Kosakata":[
                         {
                             "id_konten_kosakata":"",
-                            "url_gbr_kosakata":"",
+                            "kosakata":"",
                             "url_hangeul":"",
                             "cara_baca":"",
                             "arti":"",
@@ -136,6 +137,7 @@
                             "url_pengucapan":"",
                             "Jadwal":[
                                 {
+                                    "id_jadwal":"",
                                     "tgl_muncul":""
                                 }
                             ]
@@ -149,6 +151,7 @@
 
     "Info_App":[
         {
+            "id_info_app":"",
             "url_privacy":"",
             "url_term":"",
             "versi_app":""
@@ -165,15 +168,22 @@
             "status_tersedia":"Tersedia|Tidak",
             "Mentor":[
                 {
+                    "id_mentor":"",
                     "id_pengguna":"",
-                    "nama_mentor":"",
-                    "spesialisasi":""
+                    "nama_mentor":""
                 }
             ],
             "Konten_Video":[
                 {
                     "id_konten_video":"",
-                    "durasi_video":""
+                    "durasi_video":"",
+                    "Respon_Suka":[
+                        {
+                            "id_respon_suka":"",
+                            "id_pengguna":"",
+                            "respon_suka":"Suka|Tidak"
+                        }
+                    ]
                 }
             ],
             "Konten_Kosakata":[
@@ -182,6 +192,7 @@
                 }
             ],
             "Kuis":{
+                "id_kuis":"",
                 "topik":"",
                 "jenis_pertanyaan":"",
                 "pertanyaan":"",
@@ -192,20 +203,29 @@
                         "pilihan":"Url|Teks"
                     }
                 ]
-            }
+            },
+            "Testimoni":[
+                {
+                    "id_testimoni":"",
+                    "id_pengguna":"",
+                    "tgl_testimoni":"",
+                    "deskripsi":""
+                }
+            ]
         }
     ],
 
     "respon_konten_kelas":[
         {
+            "id_respon_konten_kelas":"",
             "id_konten":"",
             "tgl_respon":"",
             "id_pengguna":"",
             "judul_respon":"",
             "isi_respon":"",
-            "respon_suka":"Suka|Tidak",
             "Respon_Komentar":[
                 {
+                    "id_respon_komentar":"",
                     "tgl_respon":"",
                     "id_pengguna":"",
                     "isi_respon":"",
@@ -218,19 +238,30 @@
 
     "Forum":[
         {
+            "id_forum":"",
             "nama":"",
             "deskripsi":"",
             "Anggota":[
                 {
+                    "id_anggota":"",
                     "id_pengguna":""
+                }
+            ],
+            "Respon_Suka":[
+                {
+                    "id_respon_suka":"",
+                    "id_pengguna":"",
+                    "respon_suka":"Suka|Tidak"
                 }
             ],
             "Media":[
                 {
+                    "id_media":"",
                     "url_gambar":""
                 }
             ],
             "Posting_Forum":{
+                "id_posting_forum":"",
                 "id_pengguna":"",
                 "tgl_posting":"",
                 "judul_posting":"",
@@ -242,6 +273,7 @@
                 "id_pengguna_update":"",
                 "Respon_Posting":[
                     {
+                        "id_respon_posting":"",
                         "tgl_respon":"",
                         "id_pengguna":"",
                         "isi_respon":"",
@@ -250,6 +282,7 @@
                         "id_pengguna_update":"",
                         "Laporan_Posting":[
                             {
+                                "id_laporan_posting":"",
                                 "alasan":"",
                                 "status":"Mununggu|Direspon"
                             }
