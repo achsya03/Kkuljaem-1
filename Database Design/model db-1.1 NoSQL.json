@@ -15,6 +15,8 @@
             "token":"",
             "jenis_pengguna":"Null|Siswa|Mentor|Admin",
             "jenis_akun":"NoSign|Helm|CrownSilver",
+            "waktu_masuk":"==========",
+            "waktu_keluar":"=========",
             "Langganan":{
                 "id_langganan":"",
                 "id_jenis_langganan":"",
@@ -120,12 +122,7 @@
                     "judul_video":"",
                     "url_video":"",
                     "durasi_video":"",
-                    "Jadwal":[
-                        {
-                            "id_jadwal":"",
-                            "tgl_muncul":""
-                        }
-                    ]
+                    "Jadwal":["tgl_muncul","tgl_muncul"]
                 }
             ],
             "Kosakata":[
@@ -137,12 +134,7 @@
                     "arti":"",
                     "penggunaan":"",
                     "url_pengucapan":"",
-                    "Jadwal":[
-                        {
-                            "id_jadwal":"",
-                            "tgl_muncul":""
-                        }
-                    ]
+                    "Jadwal":["tgl_muncul","tgl_muncul"]
                 }
             ]
         }
@@ -166,51 +158,19 @@
             "total_video":"",
             "total_jam":"",
             "status_tersedia":"Tersedia|Tidak",
-            "Mentor":[
+            "Mentor":["id_pengguna","id_pengguna"],
+            "Konten":[
                 {
-                    "id_mentor":"",
-                    "id_pengguna":""
+                    "id_konten":"",
+                    "nomor_konten":"",
+                    "jenis_konten":"Video|Quiz",
+                    "jml_like":"",
+                    "jml_komentar":"",
+                    "Video":["id_video","id_video"],
+                    "Quiz":["id_quiz","id_quiz"]
                 }
             ],
-            "Video":[
-                {
-                    "id_video":"",
-                    "id_konten_video":"",
-                    "Kosakata":[
-                        {
-                            "id_kosakata":"",
-                            "id_konten_kosakata":""
-                        }
-                    ],
-                    "Latihan":[
-                        {
-                            "id_latihan":"",
-                            "id_kuis":""
-                        }
-                    ],
-                    "Respon_Suka":[
-                        {
-                            "id_respon_suka":"",
-                            "id_pengguna":"",
-                            "respon_suka":"Suka|Tidak"
-                        }
-                    ]
-                }
-            ],
-            "Quiz":[
-                {
-                    "id_Quiz":"",
-                    "id_kuis":"",
-                    "jml_pertanyaan":"",
-                    "Jawaban_Siswa":[
-                        {
-                            "id_jawaban_siswa":"",
-                            "id_pengguna":"",
-                            "jawaban":""
-                        }
-                    ]
-                }
-            ],
+            
             "Testimoni":[
                 {
                     "id_testimoni":"",
@@ -222,9 +182,36 @@
         }
     ],
 
+    "Video":[
+        {
+            "id_video":"",
+            "id_konten_video":"",
+            "Kosakata":["id_konten_kosakata","id_konten_kosakata"],
+            "Latihan":["id_soal","id_soal"],
+            "nomor_konten":"",
+            "QnA":[
+                {
+                    "id_qna":"",
+                    "id_pengguna":"",
+                    "QnA_Posting":["id_posting","id_posting"],
+                    "respon_suka":"Suka|Tidak"
+                }
+            ]
+        }
+    ],
+
+    "Quiz":[
+        {
+            "id_quiz":"",
+            "nilai_quiz":"",
+            "jml_pertanyaan":"",
+            "Rinc":["id_soal","id_soal"]
+        }
+    ],
+
     
-    "Kuis":{
-        "id_kuis":"",
+    "Soal":{
+        "id_soal":"",
         "topik":"",
         "jenis_pertanyaan":"Teks|Suara|Gambar",
         "pertanyaan":"Url|Teks",
@@ -238,22 +225,37 @@
         ]
     },
 
-    "respon_konten_kelas":[
+    "Posting":[
         {
-            "id_respon_konten_kelas":"",
-            "id_konten":"",
-            "tgl_respon":"",
-            "id_pengguna":"",
-            "judul_respon":"",
-            "isi_respon":"",
-            "Respon_Komentar":[
+            "id_posting":"",
+            "id_pengguna_update":"",
+            "kategori":"QNA|Posting",
+            "tgl_posting":"",
+            "isi_teks":"",
+            "rinc_status":"Terbuka|Terblokir",
+            "jml_like":"",
+            "jml_komentar":"",
+            "Respon_Posting":[
                 {
-                    "id_respon_komentar":"",
-                    "tgl_respon":"",
+                    "id_respon_posting":"",
                     "id_pengguna":"",
+                    "id_pengguna_update":"",
+                    "tgl_respon":"",
                     "isi_respon":"",
-                    "url_respon":"",
-                    "respon_suka":"Suka|Tidak"
+                    "respon_suka":"Suka|Tidak",
+                    "rinc_status":"Terbuka|Terblokir",
+                    "alasan_laporan":"",
+                    "status_laporan":"Mununggu|Direspon",
+                    "tgl_laporan":"",
+                    "Laporan_Respon":[
+                        {
+                            "id_laporan_respon":"",
+                            "id_pengguna":"",
+                            "alasan":"",
+                            "status":"Mununggu|Direspon",
+                            "tgl_laporan":""
+                        }
+                    ]
                 }
             ]
         }
@@ -264,55 +266,42 @@
             "id_forum":"",
             "nama":"",
             "deskripsi":"",
-            "Anggota":[
+            "url_foto":"",
+            "Topik":[
                 {
-                    "id_anggota":"",
-                    "id_pengguna":""
+                    "id_topik":"",
+                    "nama_topik":"",
+                    "status":"Tersedia|Tidak Tersedia"
                 }
-            ],
-            "Respon_Suka":[
+            ]
+        }
+    ],
+
+    "Anggota":[
+        {
+            "id_anggota":"",
+            "id_forum":"",
+            "id_pengguna":"",
+            "Topik_Suka":["id_topik","id_topik"],
+            "status":"Aktif|Non Aktif",
+            "Posting_Forum":[
                 {
-                    "id_respon_suka":"",
-                    "id_pengguna":"",
-                    "respon_suka":"Suka|Tidak"
+                    "id_posting_forum":"",
+                    "id_posting":"",
+                    "id_topik":"",
+                    "judul_posting":"",
+                    "Media_Gambar":["url_gambar","url_gambar"]
                 }
-            ],
-            "Media":[
-                {
-                    "id_media":"",
-                    "url_gambar":""
-                }
-            ],
-            "Posting_Forum":{
-                "id_posting_forum":"",
-                "id_pengguna":"",
-                "tgl_posting":"",
-                "judul_posting":"",
-                "jenis_posting":"Teks|Gambar|Artikel(url)",
-                "isi_teks":"",
-                "isi_artikel":"",
-                "url_gambar":"",
-                "rinc_status":"Terbuka|Terblokir",
-                "id_pengguna_update":"",
-                "Respon_Posting":[
-                    {
-                        "id_respon_posting":"",
-                        "tgl_respon":"",
-                        "id_pengguna":"",
-                        "isi_respon":"",
-                        "respon_suka":"Suka|Tidak",
-                        "rinc_status":"Terbuka|Terblokir",
-                        "id_pengguna_update":"",
-                        "Laporan_Posting":[
-                            {
-                                "id_laporan_posting":"",
-                                "alasan":"",
-                                "status":"Mununggu|Direspon"
-                            }
-                        ]
-                    }
-                ]
-            }
+            ]
+        }
+    ],
+
+    "Posting_Terbaik":[
+        {
+            "id_posting_terbaik":"",
+            "id_posting_forum":"",
+            "id_pengguna":"",
+            "tgl_pemilihan":""
         }
     ]
 

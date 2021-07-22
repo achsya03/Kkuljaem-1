@@ -1,0 +1,109 @@
+Rabu, 14 Juli 2021
+BE-Dul
+
+Yang dikerjakan hari ini:
+- Memahami User Story
+- Membuat Breakdown untuk API Login [Daftar | Validasi | Masuk | Lupa_Katasandi | Update_Profil]
+- Membuat Database Design API Login
+- Membuat Breakdown untuk API Banner [Banner | Rinc_Banner | Kosakata_harian | Rinc_Kosakata_Harian | Video_Harian | Info_KKuljaem | Testimoni]
+- Membuat Database Design API Banner
+
+Apa yang sudah selesai kemarin:
+- 
+
+Masalah:
+- Bagian User Story - Student A3.1, A4.1, A4.2, A4.3 "Butuh referensi UI untuk validasi data yang digunakan"
+
+cc: @Fay Miftachus
+
+==============================================
+
+BE - Dul Documentation:
+
+https://github.com/achsya03/Kkuljaem-1
+>>File Task-Breakdown.txt [Breakdown sementara]
+>>model db-1.1 NoSQL.json [Rancangan Database]
+
+==============================================
+
+Kamis, 15 Juli 2021
+BE - Dul
+
+Yang dikerjakan hari ini:
+- Memahami User Story
+- Membuat Breakdown untuk API Kelas 70% | Kelas_Daftar | Kelas_Rinci | Kelas_Ambil | Kelas_Mentor_Rinci | Kelas_Progress | Kelas_Ambil (Non-Mem 1 video) | Kelas_Like_Video | Kelas_Latihan_Video
+- Membuat Database Design API Kelas 70%
+
+Apa yang sudah selesai kemarin:
+- Memahami User Story
+- Membuat Breakdown untuk API Login [Daftar | Validasi | Masuk | Lupa_Katasandi | Update_Profil]
+- Membuat Database Design API Login
+- Membuat Breakdown untuk API Banner [Banner | Rinc_Banner | Kosakata_harian | Rinc_Kosakata_Harian | Video_Harian | Info_KKuljaem | Testimoni]
+- Membuat Database Design API Banner
+
+Masalah:
+- Pending untuk API QnA		>> Karena breakdown kelas lebih banyak dari ekspektasi
+- Pending untuk API Forum	>> Karena breakdown kelas lebih banyak dari ekspektasi
+
+cc: @Fay Miftachus
+
+==============================================
+
+Jumat, 16 Juli 2021
+BE - Dul
+
+Yang dikerjakan hari ini:
+- Membuat Breakdown untuk API Kelas 100% | Kelas_Latihan_Kosakata | Kelas_Quiz | Kelas_Video_Qna | Kelas_Video_Qna_Suka | Kelas_Video_Qna_Respon | Kelas_Video_Qna_Komentar |
+- Membuat Database Design API Kelas 100%
+
+Apa yang sudah selesai kemarin:
+- Memahami User Story
+- Membuat Breakdown untuk API Kelas 70% | Kelas_Daftar | Kelas_Rinci | Kelas_Ambil | Kelas_Mentor_Rinci | Kelas_Progress | Kelas_Ambil (Non-Mem 1 video) | Kelas_Like_Video | Kelas_Latihan_Video
+- Membuat Database Design API Kelas 70%
+
+Masalah:
+- Pending untuk API QnA		>> Reschedule untuk minggu depan
+- Pending untuk API Forum	>> Reschedule untuk minggu depan
+
+cc: @Fay Miftachus
+
+==============================================
+
+Minggu, 18 Juli 2021
+BE - Dul
+
+Yang dikerjakan hari ini:
+- Membuat Breakdown untuk API QnA Qna_Riwayat | Qna_Notif | Qna_Kelas | Qna_Video | Qna_Populer | Qna_Komentar | Qna_Riwayat_Pribadi | Qna_Tambah | Qna_Daftar | Qna_Notif_Respon
+- Membuat Database Design API QnA
+
+Apa yang sudah selesai kemarin:
+- Membuat Breakdown untuk API Kelas 100% | Kelas_Latihan_Kosakata | Kelas_Quiz | Kelas_Video_Qna | Kelas_Video_Qna_Suka | Kelas_Video_Qna_Respon | Kelas_Video_Qna_Komentar |
+- Membuat Database Design API Kelas 100%
+
+Masalah:
+- ...
+
+cc: @Fay Miftachus
+
+
+==============================================
+
+Minggu, 19 Juli 2021 & 21 Juli 2021
+BE - Dul
+
+Yang dikerjakan hari ini:
+- Membuat Breakdown untuk API Forum | Forum_tema[0](populer berdasar like) A6.1 | Forum_Ikuti[1] A6.2 | Forum_Postingan_Terbaik[2] A6.3 | 
+Forum_Postingan_Terbaru[3] A6.4 | Forum_Postingan_Populer[4] A6.6 | Forum_Postingan_Komentar[5] 6.7| 
+Forum_Postingan_Like[6] A6.8 | Forum_Postingan_Laporan[7] A6.9 | Forum_Komentar_Laporan[8] A6.9 | 
+Forum_Notif[9] A6.10
+- Membuat Database Design API Forum
+- Membuar Diagram API Full [ERD]
+
+Apa yang sudah selesai kemarin:
+- Membuat Breakdown untuk API QnA Qna_Riwayat | Qna_Notif | Qna_Kelas | Qna_Video | Qna_Populer | Qna_Komentar | Qna_Riwayat_Pribadi | Qna_Tambah | Qna_Daftar | Qna_Notif_Respon
+- Membuat Database Design API QnA
+
+Masalah:
+- API Payment : Perlu penyesuaian lagi dengan dokumentasi dari payment gateway yang digunakan
+
+cc: @Fay Miftachus

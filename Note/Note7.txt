@@ -1,0 +1,27 @@
+Qna_Riwayat[0] A5.1 | Qna_Notif[1] A5.1 | Qna_Kelas[2] A5.2 | Qna_Video[3] A5.2 | Qna_Populer[4] A5.3 | Qna_Komentar[5] | 
+Qna_Riwayat_Pribadi[6] A5.4 | Qna_Tambah[7] A5.5 | Qna_Daftar[8] A5.6 | Qna_Notif_Respon[9] A5.7
+
+  Siswa dapat memberikan posting maksimal 5x sehari dan komentar di setiap video
+
+   Siswa dapat melaporkan postingan dan Komentar QnA
+
+   Siswa dapat memberikan komentar balasan QnA di setiap video terbatas 5 komentar per hari
+
+   1. Penyesuaian di kontrak untuk data yang "Tersebar"
+   2. Deploy Web Front-End
+   3. Update password via front-end web 
+   4. Perbarui status "Online" hal 5 [https://drive.google.com/drive/folders/1y6Z4DBug8OL06c_1boQkAijdY-0asl1l]
+   (banyak kondisi bisa terjadi)
+   5. Akun tidak ditemukan dan tidak terverifikasi itu sama
+   6. Hati-hati dalam pemilihan fitur untuk klient(karena menggunakan banyak platform dalam development bisa
+   menyebabkan big bug)
+   7. Istilah "Keluar" di aplikasi hal 7 [https://drive.google.com/drive/folders/1y6Z4DBug8OL06c_1boQkAijdY-0asl1l]
+   8. Apa cicilan harus ?
+
+   Siswa dapat melihat list aktivitas QnA pada halaman riwayat posting dan mendapatkan notifikasi update
+Siswa dapat melihat list QnA dengan memilih kelas dan video terkait
+SIswa dapat melihat list QnA populer dan dapat ikut serta berkomentar di dalamnya
+Siswa dapat melihat riwayat aktifitas QnA-nya
+Siswa dapat membuat pertanyaan di QnA
+Siswa yang telah membayar untuk membership dapat melihat balasan dan komentar dari Mentor atau sesama User Premium.
+Siswa mendapat notifikasi apabila post qna milinya diberi komentar oleh orang lain
